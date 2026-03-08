@@ -1,1 +1,1 @@
-# cat-service
+# cats-service
