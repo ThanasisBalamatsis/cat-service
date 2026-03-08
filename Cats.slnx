@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Api/Api.csproj" />
+    <Project Path="src/Application/Application.csproj" Id="4a36a469-b4e1-4ddc-8725-3a8dd63d3be2" />
+    <Project Path="src/Domain/Domain.csproj" Id="bd555257-0f93-44cb-b3da-bcb4a292dac3" />
+    <Project Path="src/Infrastructure/Infrastructure.csproj" Id="b57a54e7-90e3-409e-b0a6-fc8f92e6b150" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Application.Tests.Unit/Application.Tests.Unit.csproj" Id="dbde96ab-b65b-4d94-b0fa-0a441b4d997b" />
+    <Project Path="test/Domain.Tests.Unit/Domain.Tests.Unit.csproj" Id="f726bc6a-f609-42f1-bc64-742da838fcd6" />
+    <Project Path="test/Infrastructure.Tests.Unit/Infrastructure.Tests.Unit.csproj" Id="8d500de6-52d6-4958-848c-9bb81fb83bc0" />
+    <Project Path="test/Api.Tests.Unit/Api.Tests.Unit.csproj" Id="d07b572c-0a8f-435b-88b1-4cc8f8b31cbb" />
+  </Folder>
+</Solution>
