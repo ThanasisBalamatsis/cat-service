@@ -105,7 +105,7 @@ The project uses .NET User Secrets to keep sensitive configuration out of source
 ```bash
 cd src/Api
 
-dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Server=localhost;Database=CatServiceDb;Trusted_Connection=True;TrustServerCertificate=True"
+dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Server=<YOUR-SERVER-NAME>;Database=CatServiceDb;Trusted_Connection=True;TrustServerCertificate=True"
 dotnet user-secrets set "CatsApiBaseUrl" "https://api.thecatapi.com/"
 dotnet user-secrets set "xApiKey" "your-cat-api-key-here"
 ```
