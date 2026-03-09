@@ -33,7 +33,8 @@ Extra features added to demonstrate production-ready practices:
 - **Dual-Layer Duplicate Prevention** — pre-fetch existence check via `GetExistingCatIdsAsync` + unique constraint catch (SQL Server error codes 2601/2627) for concurrent job scenarios
 - **Real-Time Job Progress Tracking** — `CatsFetched` count updates during processing, visible via `GET /api/jobs/{id}`
 - **Source-Generated Logging** — `[LoggerMessage]` attributes for high-performance structured logging (zero-allocation log calls)
-- **GitHub Workflow for Unit Tests** — Execution of unit tests step when a PR or a push to main takes place  
+- **GitHub Workflow for Unit Tests** — Execution of unit tests step when a PR or a push to main takes place
+- **Central Package Management** — NuGet packages versions are managed in `Directory.Packages.props` file
 ---
 
 ## Architecture
