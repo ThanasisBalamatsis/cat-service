@@ -129,23 +129,16 @@ The database is **created and migrated automatically** on startup — no need to
 
 Docker Compose runs both SQL Server 2022 and the API in containers. No local SQL Server installation needed.
 
-#### 1. Set Your Cat API Key
+#### 1. Configure Environment Variables
 
-Create a `.env` file in the repository root:
+Create a `.env` file in the repository root with both secrets (this file is already in `.gitignore`):
 
 ```
+SA_PASSWORD=YourStrong!Passw0rd
 CAT_API_KEY=your-cat-api-key-here
 ```
 
-Or set the environment variable directly:
-
-```bash
-# Linux/macOS
-export CAT_API_KEY=your-cat-api-key-here
-
-# Windows PowerShell
-$env:CAT_API_KEY = "your-cat-api-key-here"
-```
+> **Note:** The SA password must meet SQL Server complexity requirements (uppercase + lowercase + digit + special character, minimum 8 characters).
 
 #### 2. Start the Containers
 
@@ -155,7 +148,7 @@ docker-compose up --build
 
 This starts:
 
-- **SQL Server 2022** on port `1433` (SA password pre-configured in `docker-compose.yml` for development use)
+- **SQL Server 2022** on port `1433`
 - **Cat Service API** on port `5125`
 
 The API waits for SQL Server to pass its health check before starting. Database migrations are applied automatically on startup.
