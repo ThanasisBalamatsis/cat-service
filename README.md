@@ -34,7 +34,7 @@ Extra features added to demonstrate production-ready practices:
 - **Real-Time Job Progress Tracking** — `CatsFetched` count updates during processing, visible via `GET /api/jobs/{id}`
 - **Source-Generated Logging** — `[LoggerMessage]` attributes for high-performance structured logging (zero-allocation log calls)
 - **GitHub Workflow for Unit Tests** — Execution of unit tests step when a PR or a push to main takes place
-- 
+  
 ---
 
 ## Architecture
